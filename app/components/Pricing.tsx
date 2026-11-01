@@ -75,8 +75,9 @@ export default function Pricing() {
             <p className="micro">BEYOND THE BRIEF</p>
             <h3>{CUSTOM_PLAN}</h3>
             <p>
-              Need a web app or something beyond the listed packages? Let&apos;s
-              discuss your idea, the scope, and a custom quote.
+              Web apps and custom websites built around your business. Let&apos;s
+              discuss your idea, the features you need, and a tailored plan to
+              bring it to life.
             </p>
           </div>
           <div className="custom-action">
