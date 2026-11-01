@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CUSTOM_BOOKING_URL } from "../lib/content";
 import { ActionLink, Reveal, SectionLabel } from "./UI";
 
 export default function Experience() {
@@ -31,8 +32,8 @@ export default function Experience() {
               <span>03</span>Motion that brings the details to life.
             </li>
           </ul>
-          <ActionLink href="/booking?plan=Custom%20Build" secondary>
-            Build something different
+          <ActionLink href={CUSTOM_BOOKING_URL} secondary>
+            Explore a custom build
           </ActionLink>
         </div>
         <div className="xp-experience-art">

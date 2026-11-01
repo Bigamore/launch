@@ -16,7 +16,7 @@ const questions = [
   ],
   [
     "Can I request something completely custom?",
-    "Absolutely. Custom Build is for projects that go beyond the listed packages: more involved websites, distinctive interactions, or a specific direction you have in mind. Tell us about it and we'll explore the fit together.",
+    "Absolutely. Web Apps & Custom Builds is for projects beyond the listed packages: web applications, more involved websites, or a specific experience you have in mind. Tell us about your goals and we'll discuss the scope and the right approach together.",
   ],
   [
     "How long will my project take?",

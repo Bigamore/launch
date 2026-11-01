@@ -1,5 +1,7 @@
 export const FIVERR_URL = "https://www.fiverr.com/thebigamore";
 export const NAIRA_RATE = 1380;
+export const CUSTOM_PLAN = "Web Apps & Custom Builds";
+export const CUSTOM_BOOKING_URL = `/booking?plan=${encodeURIComponent(CUSTOM_PLAN)}`;
 
 export function naira(dollars: number) {
   return `₦${(dollars * NAIRA_RATE).toLocaleString("en-US")}`;
@@ -49,7 +51,7 @@ export const budgetOptions = plans
     value: plan.name,
     label: `${plan.name} — $${plan.price} / ${naira(plan.price)}`,
   }))
-  .concat({ value: "Custom Build", label: "Custom Build — Let's talk" });
+  .concat({ value: CUSTOM_PLAN, label: `${CUSTOM_PLAN} — Let's talk` });
 
 export const templates = [
   {

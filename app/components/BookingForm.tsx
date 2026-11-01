@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useRef, useState, type FormEvent } from "react";
-import { budgetOptions, templates } from "../lib/content";
+import { budgetOptions, CUSTOM_PLAN, templates } from "../lib/content";
 import { Arrow } from "./UI";
 
 type BriefFields = {
@@ -16,7 +16,8 @@ type BriefFields = {
 
 export default function BookingForm() {
   const params = useSearchParams();
-  const plan = params.get("plan") ?? "";
+  const requestedPlan = params.get("plan") ?? "";
+  const plan = requestedPlan === "Custom Build" ? CUSTOM_PLAN : requestedPlan;
   const template = templates.find((item) => item.id === params.get("template"));
   const [fields, setFields] = useState<BriefFields>({
     name: "",

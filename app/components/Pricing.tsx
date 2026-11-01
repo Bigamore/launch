@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { naira, plans } from "../lib/content";
+import { CUSTOM_BOOKING_URL, CUSTOM_PLAN, naira, plans } from "../lib/content";
 import { ActionLink, Arrow, Reveal, SectionLabel } from "./UI";
 
 export default function Pricing() {
@@ -73,17 +73,17 @@ export default function Pricing() {
           </div>
           <div className="custom-copy">
             <p className="micro">BEYOND THE BRIEF</p>
-            <h3>Custom Build</h3>
+            <h3>{CUSTOM_PLAN}</h3>
             <p>
-              Need something more sophisticated than listed? We&apos;re open to
-              conversation to discuss.
+              Need a web app or something beyond the listed packages? Let&apos;s
+              discuss your idea, the scope, and a custom quote.
             </p>
           </div>
           <div className="custom-action">
             <p>
               Custom <span>/ Let&apos;s Talk</span>
             </p>
-            <Link className="button button-secondary" href="/booking">
+            <Link className="button button-secondary" href={CUSTOM_BOOKING_URL}>
               Let&apos;s talk <Arrow diagonal />
             </Link>
           </div>
