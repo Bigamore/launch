@@ -42,7 +42,7 @@ export default function Pricing() {
                 <strong>${plan.price}</strong>
                 <span>/ {naira(plan.price)}</span>
               </div>
-              <p className="price-note">Starting at · Negotiable on Fiverr</p>
+              <p className="price-note">Starting at · Negotiable on WhatsApp</p>
               <p className="plan-description">{plan.description}</p>
               <div className="plan-rule" />
               <ul>
