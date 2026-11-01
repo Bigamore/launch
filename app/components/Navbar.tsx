@@ -23,8 +23,8 @@ export default function Navbar() {
   return (
     <header className={`site-header ${scrolled || open ? "is-scrolled" : ""}`}>
       <nav className="container nav-inner" aria-label="Main navigation">
-        <Link className="wordmark" href="/" aria-label="LAUNCH home">
-          LAUNCH<span>.</span>
+        <Link className="wordmark" href="/" aria-label="StartitXP home">
+          Startit<span>XP</span>
         </Link>
         <div className="desktop-links">
           {links.map((link) => (

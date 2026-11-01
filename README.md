@@ -1,4 +1,6 @@
-# LAUNCH
+# StartitXP
+
+**We Start It. You Ship It.**
 
 An independent digital studio website with responsive design concepts, transparent dual pricing, and a project-brief booking flow.
 
@@ -48,7 +50,7 @@ Existing dollar prices are retained. Naira display uses the requested fixed rate
 
 Visitors provide their name, business, email, package/budget, and project details. Choosing a package or design concept carries that choice into the form.
 
-The form generates a local project brief. Visitors can copy it or use the prefilled WhatsApp link to **2348079941362**. Opening WhatsApp does not automatically send the message; visitors review and send it themselves. No email is sent, no enquiries are stored, and no account is required.
+The form generates a local StartitXP project brief. Visitors can copy it or use the prefilled WhatsApp link to **2348079941362**, beginning with “Hi StartitXP I want to build a website.” followed by the encoded project brief. Opening WhatsApp does not automatically send the message; visitors review and send it themselves. No email is sent, no enquiries are stored, and no account is required.
 
 The Fiverr profile remains https://www.fiverr.com/thebigamore.
 

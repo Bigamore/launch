@@ -22,7 +22,7 @@ const steps = [
     n: "03",
     title: "Ready for the real world.",
     text: "Responsive development, the agreed revisions, and a considered handover. A website you're proud to share.",
-    detail: "DEVELOP / LAUNCH",
+    detail: "DEVELOP / SHIP",
     icon: "↗",
   },
 ];

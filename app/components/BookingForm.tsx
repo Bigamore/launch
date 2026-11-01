@@ -31,7 +31,9 @@ export default function BookingForm() {
   const outputRef = useRef<HTMLTextAreaElement>(null);
   const resultHeading = useRef<HTMLHeadingElement>(null);
   const whatsappNumber = "2348079941362";
-  const whatsappHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(brief)}`;
+  const whatsappHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi StartitXP I want to build a website.
+
+${brief}`)}`;
 
   function update(key: keyof BriefFields, value: string) {
     setFields((current) => ({ ...current, [key]: value }));
@@ -44,7 +46,7 @@ export default function BookingForm() {
       fields.budget;
     setBrief(
       [
-        "LAUNCH — PROJECT BRIEF",
+        "StartitXP — PROJECT BRIEF",
         "",
         `Name: ${fields.name.trim()}`,
         `Business: ${fields.business.trim()}`,

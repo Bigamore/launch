@@ -27,6 +27,7 @@ export default function Hero() {
           <br />
           <span className="hero-gradient">first impressions.</span>
         </h1>
+        <p className="brand-tagline">We Start It. You Ship It.</p>
         <p className="hero-description">
           We turn ambitious ideas into websites people remember. Thoughtful
           design. Purposeful motion. Built for your next chapter.

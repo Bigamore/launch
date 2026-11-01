@@ -7,7 +7,7 @@ import { SectionLabel } from "../components/UI";
 export const metadata: Metadata = {
   title: "Start a project",
   description:
-    "Tell LAUNCH about your next website. Create a project brief and share it on WhatsApp. No account required.",
+    "Tell StartitXP about your next website. Create a project brief and share it on WhatsApp. No account required.",
 };
 
 export default function BookingPage() {

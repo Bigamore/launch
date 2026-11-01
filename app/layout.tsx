@@ -15,20 +15,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://launch-i78q.vercel.app"),
   title: {
-    default: "LAUNCH — Remarkable first impressions",
-    template: "%s | LAUNCH",
+    default: "StartitXP — Premium Landing Pages in 48hrs",
+    template: "%s | StartitXP",
   },
-  description:
-    "Independent digital studio for ambitious founders. Thoughtful websites, purposeful motion, and custom builds. Based in Lagos, working everywhere.",
+  description: "StartitXP builds high-converting landing pages for founders",
   openGraph: {
-    title: "LAUNCH — Remarkable first impressions",
-    description:
-      "Good ideas deserve a remarkable first impression. Explore distinctive website design and book your next project.",
+    title: "StartitXP — Premium Landing Pages in 48hrs",
+    description: "StartitXP builds high-converting landing pages for founders",
     type: "website",
     locale: "en_NG",
-    siteName: "LAUNCH",
+    siteName: "StartitXP",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "StartitXP — Premium Landing Pages in 48hrs",
+    description: "StartitXP builds high-converting landing pages for founders",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

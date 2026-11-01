@@ -444,6 +444,16 @@ h2 > span {
   background-clip: text;
   color: transparent;
 }
+.brand-tagline {
+  margin-top: 23px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+.brand-tagline + .hero-description {
+  margin-top: 12px;
+}
 .hero-description {
   color: #96988f;
   max-width: 365px;

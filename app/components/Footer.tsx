@@ -30,7 +30,7 @@ export default function Footer({ compact = false }: { compact?: boolean }) {
       )}
       <div className="container footer-bottom">
         <Link className="wordmark" href="/">
-          LAUNCH<span>.</span>
+          Startit<span>XP</span>
         </Link>
         <span className="footer-location">
           INDEPENDENT DIGITAL STUDIO
@@ -46,9 +46,9 @@ export default function Footer({ compact = false }: { compact?: boolean }) {
           </Link>
         </div>
         <span className="copyright">
-          © 2026 LAUNCH.
+          © 2026 StartitXP.
           <br />
-          MADE WITH INTENTION.
+          WE START IT. YOU SHIP IT.
         </span>
       </div>
     </footer>
