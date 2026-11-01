@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Cursor from "./components/Cursor";
 import "./globals.css";
+import "./catalog-theme.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({

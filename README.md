@@ -69,3 +69,9 @@ The StartitXP signature pairs two interlocking forms with an outlined wordmark. 
 Use `Logo` from `app/components/Logo.tsx`: `<Logo variant="dark" />` for dark backgrounds, `<Logo variant="light" />` for light backgrounds. `size={24}` is the default height; `size={200}` scales the same vectors for larger placements. `iconOnly` and `monochrome` are also supported.
 
 Exports: `/logo.svg`, `/logo-light.svg`, `/logo-monochrome.svg`, and `/icon.svg`. Wordmark glyphs are Inter 700 / 800 converted to paths, so the logo makes no font request and cannot fall back to a different typeface. Font license: `/brand/inter-OFL.txt`.
+
+## Catalog visual direction
+
+The live site now uses the same sculptural ivory-and-iris art direction as the WhatsApp catalog. The hero is live HTML with dedicated ribbon artwork, not a screenshot of a website. Concept previews use real HTML text, the approved logo, and shared artwork. The custom-build section carries the same architectural portal language.
+
+The catalog styling lives in `app/catalog-theme.css`; artwork is saved in `public/images/` and rendered through Next.js Image. Existing dollar pricing, the fixed naira conversion, booking brief generation, and WhatsApp destination are retained.

@@ -4,87 +4,9 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { templates } from "../lib/content";
 import { Arrow, Reveal, SectionLabel } from "./UI";
-import Dashboard from "./Dashboard";
+import SiteConcept from "./SiteConcept";
 
 type Template = (typeof templates)[number];
-
-function Concept({
-  template,
-  expanded = false,
-}: {
-  template: Template;
-  expanded?: boolean;
-}) {
-  if (template.kind === "dashboard")
-    return (
-      <div className={`concept concept-orbit ${expanded ? "expanded" : ""}`}>
-        <div className="concept-nav">
-          <span>◈ orbit</span>
-          <span>Built for your next big move. ↗</span>
-        </div>
-        <div className="concept-orbit-copy">
-          <span className="micro">CLARITY, AT EVERY SCALE.</span>
-          <h4>
-            Your business.
-            <br />
-            <span>In perspective.</span>
-          </h4>
-        </div>
-        <div className="concept-dashboard">
-          <Dashboard compact />
-        </div>
-      </div>
-    );
-  if (template.kind === "studio")
-    return (
-      <div className={`concept concept-studio ${expanded ? "expanded" : ""}`}>
-        <div className="concept-nav">
-          <span>form & field®</span>
-          <span>INDEPENDENT BY DESIGN</span>
-        </div>
-        <div className="studio-title">
-          A little
-          <br />
-          <em>less ordinary.</em>
-        </div>
-        <div className="studio-art" aria-hidden="true">
-          <div className="art-ring ring-one" />
-          <div className="art-ring ring-two" />
-          <div className="art-ring ring-three" />
-        </div>
-        <div className="studio-caption">
-          <span>BRAND. SPACE. DIGITAL.</span>
-          <span>01—03 ↗</span>
-        </div>
-      </div>
-    );
-  return (
-    <div className={`concept concept-finance ${expanded ? "expanded" : ""}`}>
-      <div className="concept-nav">
-        <span>v / vault</span>
-        <span>THE FUTURE IS YOURS ↗</span>
-      </div>
-      <div className="finance-title">
-        Your money.
-        <br />
-        <span>New possibilities.</span>
-      </div>
-      <div className="finance-orbit" aria-hidden="true">
-        <div className="finance-circle" />
-        <div className="bank-card">
-          <span>vault /</span>
-          <strong>•••• 0842</strong>
-          <small>YOUR NEXT CHAPTER</small>
-          <i>◈</i>
-        </div>
-      </div>
-      <div className="finance-caption">
-        <span>BUILT AROUND YOU.</span>
-        <span>↗</span>
-      </div>
-    </div>
-  );
-}
 
 export default function Templates() {
   const [filter, setFilter] = useState("All directions");
@@ -100,19 +22,24 @@ export default function Templates() {
   }
 
   return (
-    <section className="section templates-section container" id="templates">
+    <section
+      className="section templates-section container xp-templates"
+      id="templates"
+    >
       <Reveal className="section-heading">
         <div>
-          <SectionLabel>A TASTE OF WHAT&apos;S POSSIBLE</SectionLabel>
+          <SectionLabel>
+            DESIGN DIRECTIONS / A TASTE OF WHAT&apos;S POSSIBLE
+          </SectionLabel>
           <h2>
-            Different ambitions.
+            Designed to stand out.
             <br />
-            <span>Distinctive directions.</span>
+            <span>Built to feel different.</span>
           </h2>
         </div>
         <p>
-          A few starting points for the conversation. Every concept is adapted
-          to your brand, content, and goals.
+          Explore a few possibilities. Every direction is shaped around your
+          brand, your content, and your next chapter.
         </p>
       </Reveal>
       <div className="template-toolbar">
@@ -135,7 +62,7 @@ export default function Templates() {
         <span className="micro">ILLUSTRATIVE CONCEPTS / NOT CLIENT WORK</span>
       </div>
       <div className="template-grid">
-        {visible.map((template) => (
+        {visible.map((template, index) => (
           <article className="template-card" key={template.id}>
             <button
               type="button"
@@ -143,19 +70,21 @@ export default function Templates() {
               onClick={() => preview(template)}
               aria-label={`Preview ${template.name} concept`}
             >
-              <Concept template={template} />
+              <SiteConcept variant={template.id} />
               <span className="preview-overlay">
                 Explore concept <Arrow diagonal />
               </span>
             </button>
             <div className="template-meta">
               <div>
-                <p className="micro">{template.tag}</p>
+                <p className="micro">
+                  0{index + 1} / {template.tag}
+                </p>
                 <h3>{template.name}</h3>
               </div>
               <button
-                className="icon-button"
                 type="button"
+                className="icon-button"
                 aria-label={`Open ${template.name} preview`}
                 onClick={() => preview(template)}
               >
@@ -185,7 +114,7 @@ export default function Templates() {
               ×
             </button>
           </div>
-          {selected && <Concept template={selected} expanded />}
+          {selected && <SiteConcept variant={selected.id} expanded />}
           <div className="dialog-footer">
             <p>
               Illustrative direction. Your final website is tailored to your

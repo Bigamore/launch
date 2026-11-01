@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Process from "./components/Process";
 import Templates from "./components/Templates";
+import Experience from "./components/Experience";
 import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
@@ -10,8 +11,9 @@ export default function Home() {
     <>
       <main id="main-content">
         <Hero />
-        <Process />
         <Templates />
+        <Experience />
+        <Process />
         <Pricing />
         <FAQ />
       </main>
