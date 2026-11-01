@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 import { FIVERR_URL } from "../lib/content";
 import { ActionLink, Arrow, Reveal, SectionLabel } from "./UI";
 
@@ -29,8 +30,8 @@ export default function Footer({ compact = false }: { compact?: boolean }) {
         </Reveal>
       )}
       <div className="container footer-bottom">
-        <Link className="wordmark" href="/">
-          Startit<span>XP</span>
+        <Link className="wordmark" href="/" aria-label="StartitXP home">
+          <Logo variant="dark" />
         </Link>
         <span className="footer-location">
           INDEPENDENT DIGITAL STUDIO

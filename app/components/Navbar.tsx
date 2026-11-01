@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Logo from "./Logo";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
@@ -24,7 +25,7 @@ export default function Navbar() {
     <header className={`site-header ${scrolled || open ? "is-scrolled" : ""}`}>
       <nav className="container nav-inner" aria-label="Main navigation">
         <Link className="wordmark" href="/" aria-label="StartitXP home">
-          Startit<span>XP</span>
+          <Logo variant="dark" />
         </Link>
         <div className="desktop-links">
           {links.map((link) => (

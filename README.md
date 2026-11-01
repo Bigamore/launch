@@ -61,3 +61,11 @@ Orbit, Form & Field, and Vault are illustrative concept directions, clearly labe
 ## Deployment
 
 The existing Vercel project is connected to this repository. Push to its production branch to trigger deployment. Keep `.vercel/`, `.env*`, and credentials out of source control.
+
+## Brand identity
+
+The StartitXP signature pairs two interlocking forms with an outlined wordmark. The iris facet marks the first move: the point where an idea becomes an experience. The core silhouette also works in one color.
+
+Use `Logo` from `app/components/Logo.tsx`: `<Logo variant="dark" />` for dark backgrounds, `<Logo variant="light" />` for light backgrounds. `size={24}` is the default height; `size={200}` scales the same vectors for larger placements. `iconOnly` and `monochrome` are also supported.
+
+Exports: `/logo.svg`, `/logo-light.svg`, `/logo-monochrome.svg`, and `/icon.svg`. Wordmark glyphs are Inter 700 / 800 converted to paths, so the logo makes no font request and cannot fall back to a different typeface. Font license: `/brand/inter-OFL.txt`.

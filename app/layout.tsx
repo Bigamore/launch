@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     template: "%s | StartitXP",
   },
   description: "StartitXP builds high-converting landing pages for founders",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml", sizes: "any" }],
+    shortcut: "/icon.svg",
+  },
   openGraph: {
     title: "StartitXP — Premium Landing Pages in 48hrs",
     description: "StartitXP builds high-converting landing pages for founders",

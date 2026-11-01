@@ -311,13 +311,16 @@ h2 > span {
   gap: 24px;
 }
 .wordmark {
-  font-size: 24px;
-  font-weight: 850;
-  letter-spacing: -0.065em;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 0;
 }
-.wordmark > span {
-  color: var(--accent);
+.startitxp-logo {
+  display: block;
+  flex-shrink: 0;
+  max-width: 100%;
+  height: auto;
 }
 .desktop-links {
   display: flex;
@@ -3121,6 +3124,12 @@ h2 > span {
   }
 }
 @media (max-width: 360px) {
+  .nav-cta .button > svg {
+    display: none;
+  }
+  .nav-actions {
+    gap: 8px;
+  }
   .container {
     width: calc(100% - 32px);
   }
