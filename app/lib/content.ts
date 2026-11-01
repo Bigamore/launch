@@ -1,0 +1,82 @@
+export const FIVERR_URL = "https://www.fiverr.com/thebigamore";
+export const NAIRA_RATE = 1380;
+
+export function naira(dollars: number) {
+  return `₦${(dollars * NAIRA_RATE).toLocaleString("en-US")}`;
+}
+
+export const plans = [
+  {
+    name: "Basic",
+    price: 150,
+    description: "Perfect to get started fast. Starting price, negotiable.",
+    features: [
+      "Single-section landing page",
+      "Responsive mobile design",
+      "Your copy and branding",
+      "1 revision",
+    ],
+    featured: false,
+  },
+  {
+    name: "Standard",
+    price: 350,
+    description: "Most founders choose this. Flexible pricing, let's talk.",
+    features: [
+      "Landing page with up to 5 sections",
+      "Custom responsive design",
+      "Smooth scroll animations",
+      "2 revisions",
+    ],
+    featured: true,
+  },
+  {
+    name: "Premium",
+    price: 600,
+    description: "For serious launches. Custom quote, room to discuss.",
+    features: [
+      "Landing page with up to 8 sections",
+      "Custom design and animations",
+      "Conversion-focused copy polish",
+      "3 revisions",
+    ],
+    featured: false,
+  },
+];
+
+export const budgetOptions = plans
+  .map((plan) => ({
+    value: plan.name,
+    label: `${plan.name} — $${plan.price} / ${naira(plan.price)}`,
+  }))
+  .concat({ value: "Custom Build", label: "Custom Build — Let's talk" });
+
+export const templates = [
+  {
+    id: "orbit",
+    name: "Orbit",
+    category: "SaaS",
+    kind: "dashboard",
+    description:
+      "A precise, product-led direction for your next software launch.",
+    tag: "SaaS / Analytics",
+  },
+  {
+    id: "form",
+    name: "Form & Field",
+    category: "Service",
+    kind: "studio",
+    description:
+      "Editorial typography meets a confident, considered studio presence.",
+    tag: "Studio / Portfolio",
+  },
+  {
+    id: "vault",
+    name: "Vault",
+    category: "SaaS",
+    kind: "finance",
+    description:
+      "A quietly bold interface for modern finance and ambitious products.",
+    tag: "Fintech / Product",
+  },
+];
