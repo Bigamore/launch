@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { CUSTOM_BOOKING_URL, CUSTOM_PLAN, naira, plans } from "../lib/content";
+import { CUSTOM_PLAN, naira, plans } from "../lib/content";
+import { whatsappLink } from "../lib/contact";
 import { ActionLink, Arrow, Reveal, SectionLabel } from "./UI";
 
 export default function Pricing() {
@@ -54,7 +55,10 @@ export default function Pricing() {
                 ))}
               </ul>
               <ActionLink
-                href={`/booking?plan=${encodeURIComponent(plan.name)}`}
+                href={whatsappLink(
+                  `Hi StartitXP I am interested in the ${plan.name} package, starting at $${plan.price} / ${naira(plan.price)}. Can we discuss my project?`,
+                )}
+                external
                 secondary={!plan.featured}
               >
                 Choose {plan.name}
@@ -75,16 +79,23 @@ export default function Pricing() {
             <p className="micro">BEYOND THE BRIEF</p>
             <h3>{CUSTOM_PLAN}</h3>
             <p>
-              Web apps and custom websites built around your business. Let&apos;s
-              discuss your idea, the features you need, and a tailored plan to
-              bring it to life.
+              Web apps and custom websites built around your business.
+              Let&apos;s discuss your idea, the features you need, and a
+              tailored plan to bring it to life.
             </p>
           </div>
           <div className="custom-action">
             <p>
               Custom <span>/ Let&apos;s Talk</span>
             </p>
-            <Link className="button button-secondary" href={CUSTOM_BOOKING_URL}>
+            <Link
+              className="button button-secondary"
+              href={whatsappLink(
+                `Hi StartitXP I would like to discuss ${CUSTOM_PLAN}. I have a project in mind and would like a custom quote.`,
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Let&apos;s talk <Arrow diagonal />
             </Link>
           </div>

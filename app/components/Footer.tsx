@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import { FIVERR_URL } from "../lib/content";
+import { whatsappLink } from "../lib/contact";
 import { ActionLink, Arrow, Reveal, SectionLabel } from "./UI";
 
 export default function Footer({ compact = false }: { compact?: boolean }) {
@@ -42,8 +42,14 @@ export default function Footer({ compact = false }: { compact?: boolean }) {
           <Link href="/booking">
             Book a project <Arrow diagonal />
           </Link>
-          <Link href={FIVERR_URL} target="_blank" rel="noopener noreferrer">
-            Find us on Fiverr <Arrow diagonal />
+          <Link
+            href={whatsappLink(
+              "Hi StartitXP I want to build a website or web app.",
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chat on WhatsApp <Arrow diagonal />
           </Link>
         </div>
         <span className="copyright">

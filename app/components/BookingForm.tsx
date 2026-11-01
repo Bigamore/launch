@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useRef, useState, type FormEvent } from "react";
 import { budgetOptions, CUSTOM_PLAN, templates } from "../lib/content";
 import { Arrow } from "./UI";
+import { WHATSAPP_NUMBER, whatsappLink } from "../lib/contact";
 
 type BriefFields = {
   name: string;
@@ -31,10 +32,10 @@ export default function BookingForm() {
   const [copyError, setCopyError] = useState(false);
   const outputRef = useRef<HTMLTextAreaElement>(null);
   const resultHeading = useRef<HTMLHeadingElement>(null);
-  const whatsappNumber = "2348079941362";
-  const whatsappHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi StartitXP I want to build a website.
+  const whatsappNumber = WHATSAPP_NUMBER;
+  const whatsappHref = whatsappLink(`Hi StartitXP I want to build a website.
 
-${brief}`)}`;
+${brief}`);
 
   function update(key: keyof BriefFields, value: string) {
     setFields((current) => ({ ...current, [key]: value }));
