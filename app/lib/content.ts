@@ -9,18 +9,6 @@ export function naira(dollars: number) {
 
 export const plans = [
   {
-    name: "Basic",
-    price: 150,
-    description: "Perfect to get started fast. Starting price, negotiable.",
-    features: [
-      "Single-section landing page",
-      "Responsive mobile design",
-      "Your copy and branding",
-      "1 revision",
-    ],
-    featured: false,
-  },
-  {
     name: "Standard",
     price: 350,
     description: "Most founders choose this. Flexible pricing, let's talk.",

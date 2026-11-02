@@ -41,7 +41,6 @@ Existing dollar prices are retained. Naira display uses the requested fixed rate
 
 | Plan                     | USD    | NGN        |
 | ------------------------ | ------ | ---------- |
-| Basic                    | $150   | ₦207,000   |
 | Standard                 | $350   | ₦483,000   |
 | Premium                  | $600   | ₦828,000   |
 | Web Apps & Custom Builds | Custom | Let's Talk |

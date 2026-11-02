@@ -28,7 +28,7 @@ const questions = [
   ],
   [
     "Are mobile design and revisions included?",
-    "Responsive design is included in every listed package. Basic includes one revision, Standard two, and Premium three. For a custom build, we agree the revision scope in your quote.",
+    "Responsive design is included in every listed package. Standard includes two revisions, and Premium includes three. For a custom build, we agree the revision scope in your quote.",
   ],
 ];
 
